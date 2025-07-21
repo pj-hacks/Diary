@@ -1,0 +1,134 @@
+
+#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
+#include <stdlib.h>
+#include <linux/limits.h>
+#include "utility.h" //This library contain the utility function
+#include "file_protection.h"
+#include "file_management.h"
+//#include <unistd.h>
+
+
+int file_management(char * username)  //this module helps for the file assess{ i mean enables user to access file easily}
+{
+
+    int file_access;
+    //char user_password[30];
+    //FILE *file_accessing;
+    printf("Welcone back %s.\n", username );
+   /// printf("Enter password to decrypt your files: ");
+    //fgets(user_password, sizeof(user_password), stdin);
+    //remove_newline(user_password);
+    //fileDecryption(user_password);
+    printf("This are the list of files you have: \n1. personal_diary \n2. financial \n3. medical \n4. academic \n5. social");
+    printf("\nRemember that you are to select from 1-5 and 0 if you want to exit\n");
+    printf("\nwhat file do you want to access: ");
+    scanf("%d", &file_access);
+    clear_buffer();
+
+while(1){
+
+    if(file_access == 1){
+        char cwd[PATH_MAX];
+        const char *filename = "personal_diary.txt";
+        if(getcwd(cwd, sizeof(cwd)) != NULL){
+            strcat(cwd, "/");
+            strcat(cwd, username);
+            strcat(cwd, "/");
+            char command[256];
+            snprintf(command, sizeof(command), "cd %s &&",cwd );
+            char *editor = "nano";
+            strncat(command, editor, sizeof(command) - strlen(command) - 1);
+            strncat(command, " ", sizeof(command) - strlen(command) - 1);
+            strncat(command, filename, sizeof(command) - strlen(command) - 1);
+
+            system(command);
+        }
+    }
+    else if(file_access == 2){
+        char cwd[PATH_MAX];
+        char *filename = "financial.txt";
+        if(getcwd(cwd, sizeof(cwd)) != NULL){
+            strcat(cwd, "/");
+            strcat(cwd, username);
+            strcat(cwd, "/");
+            char command[256];
+            snprintf(command, sizeof(command), "cd %s &&",cwd );
+            char *editor = "nano";
+            strncat(command, editor, sizeof(command) - strlen(command) - 1);
+            strncat(command, " ", sizeof(command) - strlen(command) - 1);
+            strncat(command, filename, sizeof(command) - strlen(command) - 1);
+
+            system(command);
+        }
+    }
+    else if(file_access == 3){
+        char cwd[PATH_MAX];
+        char *filename = "medical.txt";
+        if(getcwd(cwd, sizeof(cwd)) != NULL){
+            strcat(cwd, "/");
+            strcat(cwd, username);
+            strcat(cwd, "/");
+            char command[256];
+            snprintf(command, sizeof(command), "cd %s &&",cwd );
+            char *editor = "nano";
+            strncat(command, editor, sizeof(command) - strlen(command) - 1);
+            strncat(command, " ", sizeof(command) - strlen(command) - 1);
+            strncat(command, filename, sizeof(command) - strlen(command) - 1);
+
+            system(command);
+        }
+    }
+    else if(file_access == 4){
+        char cwd[PATH_MAX];
+        const char *filename = "academic.txt";
+        if(getcwd(cwd, sizeof(cwd)) != NULL){
+            strcat(cwd, "/");
+            strcat(cwd, username);
+            strcat(cwd, "/");
+            char command[256];
+            snprintf(command, sizeof(command), "cd %s &&",cwd );
+            char *editor = "nano";
+            strncat(command, editor, sizeof(command) - strlen(command) - 1);
+            strncat(command, " ", sizeof(command) - strlen(command) - 1);
+            strncat(command, filename, sizeof(command) - strlen(command) - 1);
+
+            system(command);
+        }
+    }
+    else if(file_access == 5){
+        char cwd[PATH_MAX];
+        const char *filename = "social.txt";
+        if(getcwd(cwd, sizeof(cwd)) != NULL){
+            strcat(cwd, "/");
+            strcat(cwd, username);
+            strcat(cwd, "/");
+            char command[2569];
+            snprintf(command, sizeof(command), "cd %s &&",cwd );
+            char *editor = "nano";
+            strncat(command, editor, sizeof(command) - strlen(command) - 1);
+            strncat(command, " ", sizeof(command) - strlen(command) - 1);
+            strncat(command, filename, sizeof(command) - strlen(command) - 1);
+
+            system(command);
+        }
+    }
+    else if(file_access == 0){
+        printf("leaving...");
+        printf("\nPress enter to leave..");
+        getchar();
+        break;
+    }
+
+    printf("This are the list of files you have: \n1. personal_diary \n2. financial \n3. medical \n4. academic \n5. social");
+    printf("\nAlways enter 0 to stop.\n");
+    printf("\nSaving file ....\n");
+    sleep(2);
+    printf("Saved\n");
+    printf("\nwhat file do you want to access: ");
+    scanf("%d", &file_access);
+    clear_buffer();
+}
+    return 0;
+}

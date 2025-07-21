@@ -1,0 +1,54 @@
+﻿						mallotAi
+
+    		 This is the documentation of the whole details and usage of the program.
+				(THE NAME OF THE FILE IS MALLOT_AI)
+
+List of the files that makes up the program each have there header: 
+    1. file_management.c (file_management.h)
+    2. user_existance.c  (user_existance.h)
+    3. utility.c         (utility.h)
+    4. file_creation.c   (file_creation.h)
+    5. masterAi.c        This do not have a header file because it is the landing page of this program.
+    6. user_creation.c   (user_creation.h)
+    7. compliment.c      (compliment.h)
+
+						what to know.
+The reason whu i built this program was so that i will learn how to make use of some minor function and also lat my hand on some of the c exciting project.
+
+						Usage manuel.
+	Copy the git repository from < pjhacks > to your machine, then you compile all the modules like this ( gcc masterAi.c  user_existance.c utility.c file_management.c  compliment.c user_creation.c file_creation
+.c -o mallot ), when you get the repository cloned to your machine using git clone.
+
+	Then you run the execution (./mallot).You will get the following prompt, that will request for you to enter your name.
+
+                                DEVELOPERS MANUEL
+    So in this section the files used for this spectacular project will be explained thouroghly, eithout any mistake so fix your seat belt, hold tight so that you will not be left behind.
+
+    1. The utility.c {
+    This file holds the most essential part of this project; the clearbuffer, and removenewline.
+
+    The reason why i did it that way is so that i will not have to rewrite the function all over again, juct once and i will call it in to other files for ease, that is the beauty of programming.
+
+    But in the future more will be added to it becausr i think more need to be added to it so that the program will look nice and not rough, so expect more for the developers.
+    }
+
+    2. The masterAi.c {
+    This file is the home page of the program, it has a function that check for the existence of a user.
+    So it don't have all it's features now but more will be added to it later for a detaileed project.
+    }
+
+
+    3. The user_creation.c {
+    If the user does not exist this program is in charge of creating a directory for the user and also registering the user name into a file.
+    After if proceed to file creation using the file_creation function, and, the name of the new user will be appeded to a file.
+
+    But more features will be added to it soon, seat tight.
+    }
+
+    4. The user_existance.c {
+    This file play a keen role in the program it check if the user exist, using a flag for ease of manipulation.
+
+    But if user do not exist the file will call user_creation function.
+    }
+
+    5.
