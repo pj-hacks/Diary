@@ -9,11 +9,14 @@
 
 #define NUM_EDITORS 4
 #define CMD_BUFFER 512
+#define leave_loop 0
 
 const char *editor(int i);
 char *build_command(const char *cwd, const char *editor, const char *filename);
 void show_file_options();
 void open_file(const char *username, const char *filename);
+
+int control = leave_loop; // controls while loop
 
 int file_management(char *username)
 {
@@ -22,7 +25,7 @@ int file_management(char *username)
 
   while (1) {
     show_file_options();
-    printf("\nWhat file do you want to access: ");
+    printf("\nWhat file do you want to access. (0) to exit: ");
     scanf("%d", &file_access);
     clear_buffer();
 
@@ -65,17 +68,7 @@ void show_file_options()
 
 void open_file(const char *username, const char *filename)
 {
-  char cwd[PATH_MAX];
   int choice;
-
-  if (getcwd(cwd, sizeof(cwd)) == NULL) {
-    perror("getcwd failed");
-    return;
-  }
-
-  strcat(cwd, "/");
-  strcat(cwd, username);
-  strcat(cwd, "/");
 
   printf("\nSelect an editor:\n1: vim\n2: nvim\n3: nano\n4: emacs\nEditor :> ");
   scanf("%d", &choice);
@@ -86,24 +79,13 @@ void open_file(const char *username, const char *filename)
     printf("Invalid editor selection.\n");
     return;
   }
-
-  char *command = build_command(cwd, chosen_editor, filename);
+  int lenght_of_command = strlen(username) + strlen(filename) + 50;
+  char *command = malloc(lenght_of_command);
+  snprintf(command, lenght_of_command, "%s %s/%s", chosen_editor, username, filename);
   if (command) {
     system(command);
     free(command);
   }
-}
-
-char *build_command(const char *cwd, const char *editor, const char *filename)
-{
-  size_t needed = strlen(cwd) + strlen(editor) + strlen(filename) + 20;
-  char *cmd = malloc(needed);
-  if (!cmd) {
-    fprintf(stderr, "Memory allocation failed.\n");
-    return NULL;
-  }
-  snprintf(cmd, needed, "cd %s && %s %s", cwd, editor, filename);
-  return cmd;
 }
 
 const char *editor(int i)

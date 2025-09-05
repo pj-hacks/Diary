@@ -23,7 +23,7 @@ int main()
 
   srand(time(NULL));
 
-  printf("WELCOME TO MALLOT\n\t"); // This is the welcome page of mallot.
+  printf("WELCOME TO MALLOT\n"); // This is the welcome page of mallot.
 
   printf("Enter your name: "); // Prompting user for input.
 

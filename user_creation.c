@@ -9,15 +9,15 @@ int user_creation(char *userfolder)
 {
   if (mkdir(userfolder, 0755) ==
       0) { // this if statement here create a folder for the user uf ther user
-           // dint have ine.
+    // dint have ine.
 
   } else {
-    perror("\t\t\tError creating folder\n");
+    perror("\tError creating folder\n");
   }
-  printf("\t\t ACCOUNT CREATION...\t\t\t\n");
-  printf("\t\tThe name of your folder is %s\n", userfolder);
+  printf("\tACCOUNT CREATION...\t\t\t\n");
+  printf("\tThe name of your folder is %s\n", userfolder);
 
-  printf("\t\t\tProceeding to file creation.. \n");
+  printf("\tProceeding to file creation.. \n");
   file_creation(userfolder); // this function create the files for the user.
   puts("\npress enter to exist ...!");
   getchar();
