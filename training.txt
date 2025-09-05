@@ -1,0 +1,157 @@
+hello:Hi there!
+how are you:i am fine
+who are you:I am mallot
+memory used to hold a value that can be modified during program execution.
+What is a constant?:A constant is a value that cannot be changed during program execution, defined using const or #define.
+What is a pointer?:A pointer is a variable that stores the memory address of another variable.
+What is an array?:An array is a collection of elements of the same data type stored in contiguous memory locations.
+What is a function?:A function is a block of code designed to perform a specific task, reusable throughout a program.
+What is a data type?:A data type is a classification that specifies the type of data a variable can hold, such as int, float, or char.
+What is a loop?:A loop is a control structure that repeatedly executes a block of code as long as a condition is true.
+What is a for loop?:A for loop is a loop that iterates a specific number of times, controlled by an initialization, condition, and increment/decrement.
+What is a while loop?:A while loop is a loop that continues executing a block of code as long as a specified condition remains true.
+What is a do-while loop?:A do-while loop is a loop that executes a block of code at least once before checking a condition to continue.
+What is a conditional statement?:A conditional statement is a construct that executes code based on whether a condition evaluates to true or false.
+What is an if statement?:An if statement is a conditional statement that executes a block of code if a specified condition is true.
+What is an else statement?:An else statement is used with an if statement to execute a block of code when the if condition is false.
+What is a switch statement?:A switch statement is a control structure that selects one of many code blocks to execute based on a variable’s value.
+What is a break statement?:A break statement is used to exit a loop or switch statement immediately.
+What is a continue statement?:A continue statement is used to skip the current iteration of a loop and proceed to the next iteration.
+What is a return statement?:A return statement is used to exit a function and optionally return a value to the caller.
+What is a main function?:A main function is the entry point of a C program where execution begins.
+What is a header file?:A header file is a file containing declarations and macros, typically included using #include to share code across files.
+What is a macro?:A macro is a preprocessor directive defined using #define to represent a constant or code fragment.
+What is a struct?:A struct is a user-defined data type that groups variables of different data types under a single name.
+What is a union?:A union is a data type that allows storing different data types in the same memory location, but only one at a time.
+What is a typedef?:A typedef is a keyword used to create an alias for an existing data type.
+What is a pointer to a function?:A pointer to a function is a variable that stores the address of a function, allowing it to be called indirectly.
+What is dynamic memory allocation?:Dynamic memory allocation is the process of allocating memory at runtime using functions like malloc or calloc.
+What is malloc?:Malloc is a function that allocates a specified number of bytes of memory and returns a pointer to it.
+What is calloc?:Calloc is a function that allocates memory for an array of elements, initializing all bytes to zero.
+What is realloc?:Realloc is a function that resizes a previously allocated block of memory.
+What is free?:Free is a function that deallocates memory previously allocated by malloc, calloc, or realloc.
+What is a null pointer?:A null pointer is a pointer that does not point to any valid memory address, defined as NULL.
+What is a dangling pointer?:A dangling pointer is a pointer that points to memory that has been freed or is no longer valid.
+What is a string?:A string is a sequence of characters stored as an array of char, terminated by a null character (\0).
+What is a character?:A character is a single symbol stored in a char data type, typically representing an ASCII value.
+What is an integer?:An integer is a data type that represents whole numbers without a fractional component.
+What is a float?:A float is a data type that represents single-precision floating-point numbers.
+What is a double?:A double is a data type that represents double-precision floating-point numbers with greater precision than float.
+What is a void type?:A void type is a data type used to indicate that a function returns no value or a pointer points to no specific type.
+What is a global variable?:A global variable is a variable declared outside any function, accessible throughout the program.
+What is a local variable?:A local variable is a variable declared inside a function, accessible only within that function’s scope.
+What is scope?:Scope is the region of a program where a variable is accessible, such as global or local scope.
+What is a static variable?:A static variable is a variable that retains its value between function calls and has a lifetime of the entire program.
+What is an extern variable?:An extern variable is a variable declared in one file but defined in another, allowing cross-file access.
+What is a preprocessor?:A preprocessor is a tool that processes source code before compilation, handling directives like #include and #define.
+What is a directive?:A directive is a preprocessor command that instructs the compiler to perform specific actions, starting with #.
+What is a comment?:A comment is a non-executable statement in code used to explain or annotate, written as // or /* */.
+What is a bitwise operator?:A bitwise operator is an operator that performs operations on individual bits of integers, such as &, |, or ^.
+What is a logical operator?:A logical operator is an operator that performs boolean operations, such as &&, ||, or !.
+What is a pointer arithmetic?:Pointer arithmetic is the process of performing arithmetic operations on pointers, such as incrementing or decrementing.
+What is a file handling?:File handling is the process of reading from and writing to files using functions like fopen, fread, and fwrite.
+What is a recursion?:Recursion is a process where a function calls itself to solve a problem by breaking it into smaller subproblems.
+what is malloc:what is malloc?
+What is a pointer to a pointer?:A pointer to a pointer is a variable that stores the address of another pointer.
+What is a const pointer?:A const pointer is a pointer whose address cannot be changed after initialization, declared with const after the pointer type.
+What is a pointer to a constant?:A pointer to a constant is a pointer that cannot modify the value of the variable it points to, declared with const before the type.
+What is a function prototype?:A function prototype is a declaration of a function’s name, return type, and parameters without its body.
+What is a variable initialization?:Variable initialization is the process of assigning an initial value to a variable at the time of its declaration.
+What is a type casting?:Type casting is the process of converting a variable from one data type to another, such as (int)3.14.
+What is a signed integer?:A signed integer is an integer data type that can represent both positive and negative values.
+What is an unsigned integer?:An unsigned integer is an integer data type that can represent only non-negative values, increasing its range for positive numbers.
+What is a short integer?:A short integer is a smaller-sized integer data type, typically using fewer bytes than a standard int.
+What is a long integer?:A long integer is a larger-sized integer data type, typically using more bytes than a standard int.
+What is a volatile keyword?:A volatile keyword is used to indicate that a variable’s value may change unexpectedly, preventing compiler optimizations.
+What is a register variable?:A register variable is a variable suggested to be stored in a CPU register for faster access, declared with the register keyword.
+What is a storage class?:A storage class is a specifier that defines the scope, lifetime, and storage location of a variable, such as auto, static, or extern.
+What is an auto variable?:An auto variable is a local variable with automatic storage duration, created and destroyed within its scope.
+What is a preprocessor directive?:A preprocessor directive is an instruction to the preprocessor, starting with #, to perform tasks like including files or defining constants.
+What is a conditional compilation?:Conditional compilation is the process of including or excluding code blocks during compilation using directives like #ifdef or #ifndef.
+What is a #include directive?:A #include directive is a preprocessor command that includes the contents of a specified file during compilation.
+What is a #define directive?:A #define directive is a preprocessor command that defines a macro or constant for use in the program.
+What is a #undef directive?:A #undef directive is a preprocessor command that removes a previously defined macro.
+What is a enum?:An enum is a user-defined data type that consists of a set of named integer constants.
+What is a bitwise AND?:A bitwise AND is an operator (&) that performs a logical AND operation on each pair of corresponding bits of two integers.
+What is a bitwise OR?:A bitwise OR is an operator (|) that performs a logical OR operation on each pair of corresponding bits of two integers.
+What is a bitwise XOR?:A bitwise XOR is an operator (^) that performs an exclusive OR operation on each pair of corresponding bits of two integers.
+What is a bitwise NOT?:A bitwise NOT is an operator (~) that inverts all the bits of an integer.
+What is a left shift operator?:A left shift operator (<<) shifts the bits of an integer to the left by a specified number of positions.
+What is a right shift operator?:A right shift operator (>>) shifts the bits of an integer to the right by a specified number of positions.
+What is a structure padding?:Structure padding is the addition of extra bytes in a struct to align its members for efficient memory access.
+What is a structure alignment?:Structure alignment is the arrangement of struct members in memory to meet the system’s alignment requirements.
+What is a function parameter?:A function parameter is a variable in a function’s declaration that receives values when the function is called.
+What is a call by value?:Call by value is a parameter-passing method where a copy of the argument’s value is passed to the function.
+What is a call by reference?:Call by reference is a parameter-passing method where a pointer to the argument is passed, allowing the function to modify the original value.
+What is a string literal?:A string literal is a sequence of characters enclosed in double quotes, automatically terminated by a null character (\0).
+What is a escape sequence?:An escape sequence is a combination of characters starting with a backslash (\) to represent special characters, like \n for newline.
+What is a format specifier?:A format specifier is a placeholder used in functions like printf or scanf to indicate the type of data, such as %d for integers.
+What is a standard input?:Standard input is the default input stream, typically the keyboard, accessed using functions like scanf or getchar.
+What is a standard output?:Standard output is the default output stream, typically the console, accessed using functions like printf or putchar.
+What is a file pointer?:A file pointer is a variable of type FILE* used to manage file operations in C.
+What is a buffer?:A buffer is a temporary storage area in memory used to hold data during input/output operations.
+What is a memory leak?:A memory leak is the failure to free dynamically allocated memory, leading to wasted memory resources.
+What is a segmentation fault?:A segmentation fault is an error caused by accessing invalid or restricted memory, often due to dereferencing invalid pointers.
+What is a stack overflow?:A stack overflow is an error caused by excessive recursion or large local variable allocations exceeding the stack’s capacity.
+What is a linked list?:A linked list is a data structure consisting of nodes, each containing data and a pointer to the next node.
+What is a node?:A node is an element of a linked list or other data structure, containing data and pointers to other nodes.
+What is a binary file?:A binary file is a file that stores data in a non-text format, such as compiled code or serialized data.
+What is a text file?:A text file is a file that stores data as human-readable text, typically using ASCII or UTF-8 encoding.
+What is a command-line argument?:A command-line argument is a value passed to a program when it is executed, accessed via argc and argv in main.
+What is a header guard?:A header guard is a preprocessor technique using #ifndef, #define, and #endif to prevent multiple inclusions of a header file.
+What is a static function?:A static function is a function with file scope, accessible only within the file where it is defined.
+What is a variadic function?:A variadic function is a function that can accept a variable number of arguments, like printf.
+What is a null-terminated string?:A null-terminated string is a string that ends with a null character (\0) to mark its end.
+What is optimism:Belief in positive outcomes or a hopeful outlook on life.
+What is jealousy:Feeling of envy or resentment toward someone’s success or possessions.
+What is generosity:Giving freely of time, resources, or kindness without expecting return.
+What is solitude:State of being alone, often for reflection or peace.
+What is ambition:Strong desire to achieve goals through effort and determination.
+What is grief:Deep sorrow caused by loss, especially of a loved one.
+What is confidence:Belief in one’s own abilities or worth.
+What is patience:Ability to endure delays or challenges calmly.
+What is adventure:Exciting or daring experience involving exploration or risk.
+What is forgiveness:Letting go of anger or resentment toward someone for a wrong.
+What is loyalty:Steadfast commitment to a person, group, or cause.
+What is creativity:Ability to produce original ideas or expressions.
+What is stress:Emotional or mental tension caused by demanding circumstances.
+What is mindfulness:Practice of staying fully present in the moment.
+What is success:Achievement of a desired goal or outcome.
+What is failure:Inability to meet an expected goal or objective.
+What is trust:Reliance on the integrity or reliability of someone or something.
+What is compassion:Deep concern for others’ suffering with a desire to help.
+What is courage:Strength to face fear or difficulty.
+What is gratitude:Feeling of thankfulness for received blessings or kindness.
+What is hope:Expectation of positive possibilities or outcomes.
+What is fear:Emotional response to perceived danger or threat.
+What is motivation:Drive to take action toward a goal or purpose.
+What is purpose:Sense of meaning that guides one’s actions or life.
+What is balance:Equilibrium between different aspects of life, like work and rest.
+What is wisdom:Knowledge applied with sound judgment and insight.
+What is humility:Modesty in recognizing one’s limitations or worth.
+What is curiosity:Desire to learn or explore the unknown.
+What is respect:Admiration for someone’s qualities, rights, or achievements.
+What is communication:Exchange of ideas, emotions, or information between people.
+What is teamwork:Collaborative effort to achieve a shared goal.
+What is leadership:Ability to guide or inspire others toward a common purpose.
+What is responsibility:Duty to care for or manage something or someone.
+What is freedom:Ability to act or think without external constraints.
+What is joy:Intense happiness often tied to specific moments or experiences.
+What is regret:Sadness over past actions or missed opportunities.
+What is self-discipline:Control over one’s impulses to achieve goals.
+What is community:Group united by shared values, interests, or location.
+What is tradition:Custom or belief passed down through generations.
+What is growth:Process of improving in knowledge, skills, or character.
+What is passion:Intense enthusiasm or desire for something.
+What is conflict:Disagreement or struggle between opposing ideas or parties.
+What is acceptance:Embracing something as true or valid without resistance.
+What is change:Transition to a new state or condition.
+What is family:Group connected by blood, marriage, or chosen bonds.
+What is time management:Organizing tasks to use time efficiently.
+What is reflection:Deep thought about one’s experiences or beliefs.
+What is empathy:Understanding and sharing another’s emotions or perspective.
+What is authenticity:Being true to one’s own values and personality.
+What is resilience:Ability to recover from or adapt to challenges
+what is function:Function consists of an input, an output and a set of rule for assigning one input to exactly one output.
+what is love?:Deep affection or emotional bond expressed through care, support, or commitment in relationships.
+what is love:what is love?

@@ -18,7 +18,8 @@
 
 char user_name[MAX_NAME_LENGTH]; // The maximun length of the name is 50
 
-int main() {
+int main()
+{
 
   srand(time(NULL));
 
@@ -27,13 +28,13 @@ int main() {
   printf("Enter your name: "); // Prompting user for input.
 
   fgets(user_name, sizeof(user_name), stdin);
-        //Takes the name of the user and then uses it to check for the
-                // existence if the user.
+  //Takes the name of the user and then uses it to check for the
+  // existence if the user.
 
   remove_newline(user_name);
 
   user_existance(
-      user_name); // This function check for the existence of the user.
+    user_name); // This function check for the existence of the user.
 
   printf("\nLove to see you again \n");
 }
